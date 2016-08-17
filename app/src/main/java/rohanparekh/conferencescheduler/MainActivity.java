@@ -42,31 +42,36 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
+    //click events
     @Override
     public void onClick(View v) {
 
-        switch(v.getId()){
+        //checking which button is clicked
+        switch (v.getId()) {
             case R.id.buttonSignIn:
                 int radioSelected = radioLayout.getCheckedRadioButtonId();
 
+                //checking which radio button is selected and accordingly activity is changed
+                //and if not checked display a toast saying to select the radio
                 if (radioLayout.getCheckedRadioButtonId() == -1) {
 
                     Toast.makeText(getApplicationContext(), "Please select one option", Toast.LENGTH_SHORT).show();
                 } else {
+
                     if (radioSelected == admin.getId()) {
 
-                        Intent i = new Intent(this,AdminPage.class);
+                        Intent i = new Intent(this, AdminPage.class);
                         startActivity(i);
 
                     } else {
-                        Intent i = new Intent(this,DoctorPage.class);
+                        Intent i = new Intent(this, DoctorPage.class);
                         startActivity(i);
                     }
                 }
                 break;
             case R.id.buttonSignUp:
 
-                Intent i = new Intent(this,Register.class);
+                Intent i = new Intent(this, Register.class);
                 startActivity(i);
                 break;
         }
