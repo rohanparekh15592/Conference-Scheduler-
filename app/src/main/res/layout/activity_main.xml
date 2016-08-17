@@ -93,6 +93,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:clickable="true"
                 android:gravity="center"
                 android:orientation="horizontal">
 
@@ -102,6 +103,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:background="@color/colorPrimary"
+                    android:clickable="true"
                     android:gravity="left"
                     android:padding="10dp"
                     android:text="@string/signUp"

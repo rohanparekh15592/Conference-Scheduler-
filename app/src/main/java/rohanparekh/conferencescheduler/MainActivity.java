@@ -1,5 +1,6 @@
 package rohanparekh.conferencescheduler;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -54,12 +55,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 } else {
                     if (radioSelected == admin.getId()) {
 
-                    } else {
+                        Intent i = new Intent(this,AdminPage.class);
+                        startActivity(i);
 
+                    } else {
+                        Intent i = new Intent(this,DoctorPage.class);
+                        startActivity(i);
                     }
                 }
                 break;
             case R.id.buttonSignUp:
+
+                Intent i = new Intent(this,Register.class);
+                startActivity(i);
                 break;
         }
 
