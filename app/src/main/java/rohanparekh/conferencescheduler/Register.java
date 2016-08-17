@@ -23,7 +23,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
     //RadioButton radioButton;
     RadioGroup radioLayoutRegister;
     Context context = this;
-    LoginDataBaseAdapter loginDataBaseAdapter;
+    LoginDatabaseAdapter loginDataBaseAdapter;
 
 
 
