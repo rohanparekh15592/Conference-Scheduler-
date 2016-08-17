@@ -14,7 +14,26 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <intent-filter>
+                <action android:name=".Register" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name=".AdminPage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name=".DoctorPage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
+        <activity android:name=".AdminPage"></activity>
+        <activity android:name=".DoctorPage"></activity>
+        <activity android:name=".Register"></activity>
+
     </application>
 
 </manifest>
